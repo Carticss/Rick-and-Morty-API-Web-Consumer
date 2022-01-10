@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url('https://i.ytimg.com/vi/76uR3dFxPh8/maxresdefault.jpg') no-repeat center fixed; 
+    background-size: cover;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
+.chs {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 34vw;
+    background-color: #1F2937;
+    margin: 10px;
+    display: flex;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+
+
+.box > img {
+    width: 50%;
+    border-radius: 4px;
+}
+
+.ch-data {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #82BF45;
+    text-align: center;
+    font-size: 20px;
+    transition: .2s;
+}
+
+.name:hover {
+    color: white;
+    cursor: default;
+}
+
+.specie {
+    text-align: center;
+    padding: 5px;
+    background-color: #364150;
+    color: white;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 19px;
+    margin: 3px 0px;
+    transition: 0.2s;
+}
+
+.specie:hover {
+    color: #82BF45;
+    cursor: default;
+}
+
+.status {
+    text-align: center;
+    color: white;
+    padding: 4px;
+    background-color: #364150;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 9px;
+    margin: 3px 0px;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.status:hover {
+    color: #82BF45;
+    cursor: default;
+}
+
+.footClass {
+    background: #82BF45;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.footClass > a {
+    width: 9%;
+}
+
+.footClass > a > img {
+    width: 100%;
+}
+
+.footClass > p {
+    font-size: .8em;
+    padding-bottom: .1em;
+}
+
+@media (max-width: 680px) {
+    .chs {
+        display: grid;
+    }
+
+    .box {
+        width: 95%;
+    }
+    .footClass > a {
+        width: 6em;
+    }
+}
