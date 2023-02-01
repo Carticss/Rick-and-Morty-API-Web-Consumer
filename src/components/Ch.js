@@ -1,15 +1,23 @@
 import React, { useState, useEffect } from 'react'
+import axios from 'axios';
 
 const Ch = (props) => { 
     const [ch, setCh] = useState([]);
-    const API = `https://rickandmortyapi.com/api/character`;
+    const API = `https://rickandmortyapi.com/api/character?page=3`;
 
-    useEffect(() => {
-        fetch(API)
-            .then(response => response.json())
-            .then(data => setCh(data.results))
+    useEffect(() => {  
+        console.log("1")
+        console.log("2")
+        console.log("3")
+        fetchData()
     }, [])
 
+    const fetchData = async () => {
+        let response = await axios.get(API)
+        console.log(response.data.results)
+        console.log("4")
+        setCh(response.data.results)
+    }
 
     return (
         <div className="container">
